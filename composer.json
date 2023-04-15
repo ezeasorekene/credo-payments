@@ -1,0 +1,20 @@
+{
+    "name": "ezeasorekene/credo-payments",
+    "description": "This package is for communicating with credocentral.com and credodemo.com API",
+    "type": "library",
+    "require": {
+        "curl/curl": "^2.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ezeasorekene\\CredoPayments\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ekene Ezeasor",
+            "email": "ezeasorekene@gmail.com"
+        }
+    ]
+}
