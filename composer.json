@@ -8,7 +8,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ezeasorekene\\CredoPayments\\": "src/"
+            "ezeasorekene\\CredoPayments\\": "src/"
         }
     },
     "authors": [
