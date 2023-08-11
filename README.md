@@ -25,7 +25,7 @@ Define your `$apiKeys` variable as an array with the public and private keys. Yo
    $credo = new CredoPay( $apiKeys, getenv("CREDO_MODE") );
 ```
 
-Set data to post using array
+Set data to post using array. Please note that the `serviceCode` is an optional field. It is used when you want to split payments between different accounts
 
 ```php
         $credodata = [
@@ -39,6 +39,7 @@ Set data to post using array
             'customerPhoneNumber' => '234080111111111',
             'email' => 'credotest@gmail.com',
             'channels' => array('card', 'bank'),
+            'serviceCode' => 'XXXXXXXXXXX',
             "metadata" => [
                 "customFields" => [
                     [
