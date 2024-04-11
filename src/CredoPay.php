@@ -23,7 +23,7 @@ class CredoPay
     {
         $this->publicKey = isset($apiKeys['publicKey']) ? $apiKeys['publicKey'] : null;
         $this->secretKey = isset($apiKeys['secretKey']) ? $apiKeys['secretKey'] : null;
-        $this->baseUrl = $mode == 'LIVE' ? 'https://api.credocentral.com' : 'https://api.public.credodemo.com';
+        $this->baseUrl = $mode == 'LIVE' ? 'https://api.credocentral.com' : 'https://api.credodemo.com';
     }
 
     public function initialize(array $data = [])
