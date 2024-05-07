@@ -47,6 +47,7 @@ class CredoPay
                         'authorizationUrl' => $responseArray['data']['authorizationUrl'],
                         'reference' => $responseArray['data']['reference'],
                         'credoReference' => $responseArray['data']['credoReference'],
+                        'account' => $responseArray['data']['account'] ?? null,
                     ]
                 ];
             } else {
@@ -57,6 +58,7 @@ class CredoPay
                         'authorizationUrl' => $responseObject->data->authorizationUrl,
                         'reference' => $responseObject->data->reference,
                         'credoReference' => $responseObject->data->credoReference,
+                        'account' => $responseObject->data->account ?? null,
                     ]
                 ]);
             }
