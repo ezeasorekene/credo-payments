@@ -32,6 +32,7 @@ class CredoPay
 
         $initialize->setHeader('Authorization', $this->publicKey);
         $initialize->setHeader('Content-Type', 'application/json');
+        $initialize->setHeader('User-Agent', 'Credo-PHP-SDK:github.com/ezeasorekene/credo-payments');
 
         $initialize->post($this->baseUrl . "/transaction/initialize", json_encode($data));
 
